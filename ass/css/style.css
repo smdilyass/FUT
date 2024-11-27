@@ -85,11 +85,26 @@
     grid-template-rows: repeat(5, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
-}
-/* #player12 { 
-    grid-area: 9 / 4 / 10 / 5;
-}
-
+    }
+    #backgound{
+        position: relative;
+    }
+    #backgound::after{
+        content: "";
+        position: absolute;
+        inset: 0;
+        border: 2px solid white;
+        border-radius: inherit;
+        opacity: 0;
+        transition: 0.4s ease-in-out;
+    }
+    #player12:hover::after{
+        opacity: 1;
+        inset: 20px;
+    }
+    /* #player12 { 
+        grid-area: 9 / 4 / 10 / 5;
+    }
 #player13 {
     grid-area: 7 / 5 / 8 / 6; 
 }
