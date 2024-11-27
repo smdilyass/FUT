@@ -22,6 +22,7 @@
     /* background-repeat: no-repeat; */
     background-size:cover;
     background-position:center;
+    width: max;
 }
 
 /* #team-logo */
@@ -37,6 +38,7 @@
 #player1 { 
     grid-area: 9 / 4 / 10 / 5;
 }
+
 
 #player2 {
     grid-area: 7 / 5 / 8 / 6; 
@@ -77,6 +79,82 @@
 #player11 { 
     grid-area: 2 / 5 / 4 / 6; 
 }
+#player1 img { 
+    width: 100px;
+}
+#player2 img { 
+    width: 100px;
+}
+#player3 img { 
+    width: 100px;
+}
+#player4 img { 
+    width: 100px;
+}
+#player5 img { 
+    width: 100px;
+}
+#player6 img { 
+    width: 100px;
+}
+#player7 img { 
+    width: 100px;
+}
+#player8 img { 
+    width: 100px;
+}
+#player9 img { 
+    width: 100px;
+}
+#player10 img { 
+    width: 100px;
+}
+#player11 img { 
+    width: 100px;
+}
+#player12 img { 
+    width: 100px;
+}
+#player13 img { 
+    width: 100px;
+}
+#player14 img { 
+    width: 100px;
+}
+#player15 img { 
+    width: 100px;
+}
+#player16 img { 
+    width: 100px;
+}
+#player17 img { 
+    width: 100px;
+}
+#player18 img { 
+    width: 100px;
+}
+#player19 img { 
+    width: 100px;
+}
+#player20 img { 
+    width: 100px;
+}
+#player22 img { 
+    width: 100px;
+}
+#player23 img { 
+    width: 100px;
+}
+#player24 img { 
+    width: 100px;
+}
+#player25 img { 
+    width: 100px;
+}
+#player26 img { 
+    width: 100px;
+}
+
 
 #aside{
     background: rgba(7, 101, 21, 0.642);
@@ -86,21 +164,21 @@
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     }
-    #backgound{
-        position: relative;
+    #player12 {
+
+     position: relative;
     }
-    #backgound::after{
-        content: "";
-        position: absolute;
-        inset: 0;
-        border: 2px solid white;
-        border-radius: inherit;
-        opacity: 0;
-        transition: 0.4s ease-in-out;
+#content{
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     grid-template-rows: repeat(2, 1fr);
+     position: absolute;
     }
-    #player12:hover::after{
-        opacity: 1;
-        inset: 20px;
+    #content-img{
+        grid-area: 1 / 1 / 2 / 2; 
+    }
+    #content-name p{
+        grid-area: 2 / 1 / 3 / 3; 
     }
     /* #player12 { 
         grid-area: 9 / 4 / 10 / 5;
