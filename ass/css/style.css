@@ -11,148 +11,227 @@
     
 }
 
-#header{
-    background: green;
-    height: 100px;
+
+#team-logo img{
+    position:absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+    margin: 10px;
+}
+#team-name marquee{
+    position: absolute;
+    left: 60px;
+    top: 0px;
+    font-size:x-large;
 }
 
 #team-tactic{
     background-repeat: no-repeat;
-    background-image:url(../img/tiran.webp);
-    /* background-repeat: no-repeat; */
+    background-image:url(../img/199917.jpg);
     background-size:cover;
     background-position:center;
-    width: max;
 }
-
-/* #team-logo */
 
 #players{
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(9, 1fr);
+    grid-template-columns: repeat(7, 2fr);
+    grid-template-rows: repeat(9, 2fr);
     grid-column-gap: 10px;
-    grid-row-gap: 100px;
+    grid-row-gap: 10px;
 }
 
 #player1 { 
     grid-area: 9 / 4 / 10 / 5;
+    background-repeat: no-repeat;
+    background-image:url(../img/placeholder-card-normal.webp);
+    background-size:contain;
+    background-position:center;
 }
-
 
 #player2 {
     grid-area: 7 / 5 / 8 / 6; 
+    background-repeat: no-repeat;
+    background-image:url(../img/placeholder-card-normal.webp);
+    background-size:contain;
+    background-position:center;
 }
 
 #player3 {
     grid-area: 7 / 7 / 8 / 8;
+    background-repeat: no-repeat;
+    background-image:url(../img/placeholder-card-normal.webp);
+    background-size:contain;
+    background-position:center;
 }
 
 #player4 {
     grid-area: 7 / 3 / 8 / 4; 
+    background-repeat: no-repeat;
+    background-image:url(../img/placeholder-card-normal.webp);
+    background-size:contain;
+    background-position:center;
 }
 
 #player5 { 
     grid-area: 7 / 1 / 8 / 2; 
+    background-repeat: no-repeat;
+    background-image:url(../img/placeholder-card-normal.webp);
+    background-size:contain;
+    background-position:center;
 }
 
 #player6 { 
     grid-area: 4 / 1 / 6 / 2; 
+    background-repeat: no-repeat;
+    background-image:url(../img/placeholder-card-normal.webp);
+    background-size:contain;
+    background-position:center;
 }
 
 #player7 { 
     grid-area: 4 / 3 / 6 / 4; 
+    background-repeat: no-repeat;
+    background-image:url(../img/placeholder-card-normal.webp);
+    background-size:contain;
+    background-position:center;
 }
 
 #player8 {
     grid-area: 4 / 5 / 6 / 6; 
+    background-repeat: no-repeat;
+    background-image:url(../img/placeholder-card-normal.webp);
+    background-size:contain;
+    background-position:center;
 }
 
 #player9 {
     grid-area: 4 / 7 / 6 / 8;
+    background-repeat: no-repeat;
+    background-image:url(../img/placeholder-card-normal.webp);
+    background-size:contain;
+    background-position:center;
 }
 
 #player10 {
     grid-area: 2 / 3 / 4 / 4; 
+    background-repeat: no-repeat;
+    background-image:url(../img/placeholder-card-normal.webp);
+    background-size:contain;
+    background-position:center;
 }
 
 #player11 { 
     grid-area: 2 / 5 / 4 / 6; 
+    background-repeat: no-repeat;
+    background-image:url(../img/placeholder-card-normal.webp);
+    background-size:contain;
+    background-position:center;
 }
 #player1 img { 
-    width: 100px;
+    width: 60px;
+    height: 80px;
+
 }
 #player2 img { 
-    width: 100px;
+    width: 60px;
+    height: 80px;
 }
 #player3 img { 
-    width: 100px;
+    width: 60px;
+    height: 80px;
 }
 #player4 img { 
-    width: 100px;
+    width: 60px;
+    height: 80px;
 }
 #player5 img { 
-    width: 100px;
+    width: 60px;
+    height: 80px;
 }
 #player6 img { 
-    width: 100px;
+    width: 60px;
+    height: 80px;
 }
 #player7 img { 
-    width: 100px;
+    width: 60px;
+    height: 80px;
 }
 #player8 img { 
-    width: 100px;
+    width: 60px;
+    height: 80px;
 }
 #player9 img { 
-    width: 100px;
+    width: 60px;
+    height: 80px;
 }
 #player10 img { 
-    width: 100px;
+    width: 60px;
+    height: 80px;
 }
 #player11 img { 
-    width: 100px;
+    width: 60px;
+    height: 80px;
 }
 #player12 img { 
-    width: 100px;
+    width: 60px;
+    height: 80px;
 }
 #player13 img { 
-    width: 100px;
+    width: 60px;
+    height: 80px;
 }
 #player14 img { 
-    width: 100px;
+    width: 60px;
+    height: 80px;
 }
 #player15 img { 
-    width: 100px;
+    width: 60px;
+    height: 80px;
 }
 #player16 img { 
-    width: 100px;
+    width: 60px;
+    height: 80px;
 }
 #player17 img { 
-    width: 100px;
+    width: 60px;
+    height: 80px;
 }
 #player18 img { 
-    width: 100px;
+    width: 60px;
+    height: 80px;
 }
 #player19 img { 
-    width: 100px;
+    width: 60px;
+    height: 80px;
 }
 #player20 img { 
-    width: 100px;
+    width: 60px;
+    height: 80px;
 }
 #player22 img { 
-    width: 100px;
+    width: 60px;
+    height: 80px;
+}
+#player21 img { 
+    width: 60px;
+    height: 80px;
 }
 #player23 img { 
-    width: 100px;
+    width: 60px;
+    height: 80px;
 }
 #player24 img { 
-    width: 100px;
+    width: 60px;
+    height: 80px;
 }
 #player25 img { 
-    width: 100px;
+    width: 60px;
+    height: 80px;
 }
 #player26 img { 
-    width: 100px;
+    width: 60px;
+    height: 80px;
 }
 
 
