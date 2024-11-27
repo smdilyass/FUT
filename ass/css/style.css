@@ -1,0 +1,160 @@
+#body{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+#body>*{
+    padding: 10px;
+    margin: 10px;
+    flex: 1 100%;
+    
+}
+
+#header{
+    background: green;
+    height: 100px;
+}
+
+#team-tactic{
+    background-repeat: no-repeat;
+    background-image:url(../img/tiran.webp);
+    /* background-repeat: no-repeat; */
+    background-size:cover;
+    background-position:center;
+}
+
+/* #team-logo */
+
+#players{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 100px;
+}
+
+#player1 { 
+    grid-area: 9 / 4 / 10 / 5;
+}
+
+#player2 {
+    grid-area: 7 / 5 / 8 / 6; 
+}
+
+#player3 {
+    grid-area: 7 / 7 / 8 / 8;
+}
+
+#player4 {
+    grid-area: 7 / 3 / 8 / 4; 
+}
+
+#player5 { 
+    grid-area: 7 / 1 / 8 / 2; 
+}
+
+#player6 { 
+    grid-area: 4 / 1 / 6 / 2; 
+}
+
+#player7 { 
+    grid-area: 4 / 3 / 6 / 4; 
+}
+
+#player8 {
+    grid-area: 4 / 5 / 6 / 6; 
+}
+
+#player9 {
+    grid-area: 4 / 7 / 6 / 8;
+}
+
+#player10 {
+    grid-area: 2 / 3 / 4 / 4; 
+}
+
+#player11 { 
+    grid-area: 2 / 5 / 4 / 6; 
+}
+
+#aside{
+    background: rgba(7, 101, 21, 0.642);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+/* #player12 { 
+    grid-area: 9 / 4 / 10 / 5;
+}
+
+#player13 {
+    grid-area: 7 / 5 / 8 / 6; 
+}
+
+#player14 {
+    grid-area: 7 / 7 / 8 / 8;
+}
+
+#player15 {
+    grid-area: 7 / 3 / 8 / 4; 
+}
+
+#player16 { 
+    grid-area: 7 / 1 / 8 / 2; 
+}
+
+#player17 { 
+    grid-area: 4 / 1 / 6 / 2; 
+}
+
+#player18 { 
+    grid-area: 4 / 3 / 6 / 4; 
+}
+
+#player19 {
+    grid-area: 4 / 5 / 6 / 6; 
+}
+
+#player20 {
+    grid-area: 4 / 7 / 6 / 8;
+}
+
+#player21 {
+    grid-area: 2 / 3 / 4 / 4; 
+}
+
+#player22 { 
+    grid-area: 2 / 5 / 4 / 6; 
+} */
+#footer{
+    background: blue;
+    height: 80px;
+    font-size: 24px;
+}
+@media all and (min-width: 800px){
+    #main{
+        flex:3;
+    }
+
+    #aside{
+        order: 1;
+    }
+
+    #main{
+        order: 2;
+    }
+    
+    #footer{
+        order: 4;
+    }
+}
+
+@media all and (min-width: 600px){
+    #aside{
+        flex:1 ;
+    }
+
+}
