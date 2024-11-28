@@ -33,11 +33,10 @@
         fetch("ass/json/data.json")
             .then(response => response.json())
             .then(obj => {
-                const players = obj.players; // Extract players array
+                const players = obj.players; 
                 const playerContainer = document.getElementById('aside');
 
                 players.forEach(player => {
-                    // Create a div for each player
                     const playerDiv = document.createElement('div');
                     playerDiv.className = 'player-card';
                     playerDiv.innerHTML = `
@@ -58,6 +57,13 @@
                 } while (players[i].name !== "Gianluigi Donnarumma");
             })
             .catch(error => console.error("Error fetching the data:", error));
+
+
+            const addbutton = document.getElementById("addbutton")
+            addbutton.addEventListener("click", function(){
+                const blockform = document.getElementById("popup");
+                blockform.style = "display:block;"
+            });
 
 
 // const players = [

@@ -435,7 +435,7 @@
 
 .player-card {
     /* border: 1px solid #ccc; */
-    border-radius: 10px;
+    border-radius: 50px 1px;
     padding: 5px;
     margin: -2px;
     text-align: center;
@@ -443,16 +443,21 @@
     background-image:url(../img/placeholder-card-normal.webp);
     background-size:contain;
     background-position:center;
-    width: auto;
+    width: 70px;
     height: auto;
     cursor: move;
+    box-shadow: 0 0 50px rgb(13, 255, 0),
+;    box-shadow: 0 0 5px rgb(13, 255, 0),
+0 0 25px rgb(255, 179, 0),
+ 0 0 50px rgb(0, 255, 72),
+  0 0 10px rgb(9, 99, 10), 0 0 20px rgb(13, 255, 45);
 }
 
 .player-card:hover{
-    box-shadow: 0 0 5px rgb(13, 255, 0),
-     0 0 25px rgb(255, 179, 0),
-      0 0 50px rgb(0, 255, 13),
-       0 0 100px rgb(0, 255, 34), 0 0 200px rgb(0, 255, 34);
+    box-shadow: 0 0 5px rgb(255, 64, 0),
+    0 0 25px rgb(255, 179, 0),
+     0 0 50px rgb(255, 8, 0),
+      0 0 50px rgb(255, 179, 0), 0 0 20px rgb(255, 98, 0);
 }
 
 .player-photo {
@@ -473,6 +478,15 @@
     font-size: 7px;
     padding: 2px;
     margin: 1px;
-    color: rgb(0, 255, 26);
+    color: rgb(255, 255, 255);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.popup{
+    background-color: rgb(139, 0, 0);
+    height: 200px;
+    position: relative;
+    top: 50vh;
+    left: 50%;
+    display: none;
 }
