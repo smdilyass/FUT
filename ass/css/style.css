@@ -436,33 +436,39 @@
 .player-card {
     /* border: 1px solid #ccc; */
     border-radius: 10px;
-    padding: 10px;
-    margin: 10px;
+    padding: 5px;
+    margin: -2px;
     text-align: center;
-    width: 50px;
-    height: auto;
-    /* background-color: #f9f9f9; */
     background-repeat: no-repeat;
     background-image:url(../img/placeholder-card-normal.webp);
     background-size:contain;
     background-position:center;
     width: auto;
     height: auto;
+    cursor: move;
 }
+
+.player-card:hover{
+    box-shadow: 0 0 5px rgb(13, 255, 0),
+     0 0 25px rgb(255, 179, 0),
+      0 0 50px rgb(0, 255, 13),
+       0 0 100px rgb(0, 255, 34), 0 0 200px rgb(0, 255, 34);
+}
+
 .player-photo {
     width: 35px;
     height: auto;
     border-radius: 50%;
     padding: 0;
     margin: 0;
-
-
 }
+
 .club-logo {
     width: 10px;
     height: auto;
     margin-left: 5px;
 }
+
 .player-card p{
     font-size: 7px;
     padding: 2px;
