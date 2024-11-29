@@ -1,3 +1,5 @@
+const btnCloseModal = document.getElementById('buttonClose');
+
 fetch("ass/json/data.json")
     .then(response => response.json())
     .then(obj => {
@@ -17,9 +19,7 @@ fetch("ass/json/data.json")
         });
     })
 
-
     .catch(error => console.error("Error fetching the data:", error));
-
 
 const addbutton = document.getElementById("ajoute-button")
 addbutton.addEventListener("click", function () {
@@ -28,6 +28,10 @@ addbutton.addEventListener("click", function () {
 });
 
 function addPlayer() {
+    // const closMod = document.getElementById('exampleModal');
+    // closMod.classList.remove('modal fade show');
+    // closMod.classList.add('modal fade');
+
     const name = document.getElementById('Name').value;
     const position = document.getElementById('position').value;
     const photo = document.getElementById('photo').files[0]
@@ -57,6 +61,8 @@ function addPlayer() {
     document.getElementById('playerForm').reset();
     const modal = bootstrap.Modal.getInstance(document.getElementById('exampleModal'));
     modal.hide();
+    btnCloseModal.click();
+
 }
 document.querySelector('button[data-bs-toggle="modal"]').addEventListener('click', () => {
     const myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
@@ -86,10 +92,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const draggedHTML = e.dataTransfer.getData('text/plain');
             const draggedPosition = e.dataTransfer.getData('position');
             const positionId = position.id.replace('player', '').toUpperCase();
-
-            // console.log(positionId);
-            // console.log(draggedPosition);
-            
             if (draggedPosition === positionId) {
                 position.innerHTML = draggedHTML;
                 position.querySelector('.player-card').setAttribute('draggable', 'false'); // Disable further dragging
