@@ -31,7 +31,7 @@ function addPlayer() {
     // const closMod = document.getElementById('exampleModal');
     // closMod.classList.remove('modal fade show');
     // closMod.classList.add('modal fade');
-
+    // const playerContainer = document.getElementById("player-container");
     const name = document.getElementById('Name').value;
     const position = document.getElementById('position').value;
     const photo = document.getElementById('photo').files[0]
@@ -40,10 +40,10 @@ function addPlayer() {
     const club = document.getElementById('club').value;
     const logo = document.getElementById('logo').value;
     const rating = document.getElementById('rating').value;
-
-    const playerDiv = document.createElement('div');
-    playerDiv.className = 'player-card';
-    playerDiv.innerHTML = `
+    const playerDiv = document.getElementById('aside');
+    // playerDiv.className = 'player-card';
+    playerDiv.innerHTML += `
+        <div class="player-card">
         <div class="player-photo">
             <img src="${photo}" alt="${name}" style="width: 100%; height: auto;">
         </div>
@@ -53,11 +53,12 @@ function addPlayer() {
         <div class="club-logo">
             <img src="${logo}" alt="${club}" style="width: 10px; height: auto;"> ${club}
         </div>
+        </div>
     `;
 
 
-    const playerContainer = document.getElementById('players');
-    playerContainer.appendChild(playerDiv);
+    // const playerContainer = document.getElementById('players');
+    // playerContainer.appendChild(playerDiv);
     document.getElementById('playerForm').reset();
     const modal = bootstrap.Modal.getInstance(document.getElementById('exampleModal'));
     modal.hide();

@@ -63,7 +63,8 @@
         </main>
 
         <aside id="aside">
-            <div class="player-card" id="addbutton">
+          
+            <div class="player-card aside-card" id="addbutton">
                 <div class="player-photo">
 
                 </div>
@@ -81,7 +82,7 @@
         <aside id="aside2">
             <div id="ajoute">
                 <div id="ajoute-button">
-                    <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <button type="button" class="btn btn-success mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         Add Player
                     </button>
                     
@@ -124,14 +125,6 @@
                                             <input type="text" id="Name" class="form-control" required />
                                         </div>
                                         <div class="mb-3">
-                                            <label for="nationality" class="form-label">nationality:</label>
-                                            <input type="text" id="nationality" class="form-control" required />
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="flag" class="form-label">flag:</label>
-                                            <input type="text" id="flag" class="form-control" required />
-                                        </div>
-                                        <div class="mb-3">
                                             <label for="club" class="form-label">club:</label>
                                             <input type="text" id="club" class="form-control" required />
                                         </div>
@@ -143,38 +136,13 @@
                                             <label for="rating" class="form-label">rating:</label>
                                             <input type="text" id="rating" class="form-control" required />
                                         </div>
-
-                                        <div class="mb-3">
-                                            <label for="pace" class="form-label">pace:</label>
-                                            <input type="pace" id="pace" class="form-control" required />
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="shooting" class="form-label">shooting:</label>
-                                            <input type="text" id="shooting" class="form-control" required />
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="passing" class="form-label">passing:</label>
-                                            <input type="text" id="passing" class="form-control" required />
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="dribbling" class="form-label">dribbling:</label>
-                                            <input type="text" id="dribbling" class="form-control" required />
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="defending" class="form-label">defending:</label>
-                                            <input type="text" id="defending" class="form-control" required />
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="physical" class="form-label">physical:</label>
-                                            <input type="text" id="physical" class="form-control" required />
-                                        </div>
                                     </form>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">
                                         Close
                                     </button>
-                                    <button type="button" onclick="addPlayer()" class="btn btn-primary">
+                                    <button type="button" onclick="addPlayer()" class="btn btn-success">
                                         Add player
                                     </button>
                                 </div>
