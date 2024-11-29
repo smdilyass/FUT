@@ -1,160 +1,398 @@
-#body{
+#body {
     display: flex;
     flex-flow: row wrap;
     text-align: center;
+    background:rgb(0, 0, 0);
+    background-position: center;
+    background-size: cover;
 }
 
-#body>*{
+#body>* {
     padding: 10px;
     margin: 10px;
     flex: 1 100%;
-    
+
 }
 
-#header{
+
+#team-logo img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60px;
+    margin: 0px;
     background: green;
-    height: 100px;
 }
 
-#team-tactic{
+#team-name marquee {
+    position: absolute;
+    left: 60px;
+    top: 0px;
+    font-size: x-large;
+}
+
+#team-tactic {
+    display: grid;
     background-repeat: no-repeat;
-    background-image:url(../img/tiran.webp);
-    /* background-repeat: no-repeat; */
-    background-size:cover;
-    background-position:center;
+    background-image: url(../img/tiran.webp);
+    background-size: cover;
+    background-position: center;
+    height: 855px;
+    width: 620px;
 }
 
-/* #team-logo */
-
-#players{
+#players {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(9, 1fr);
     grid-column-gap: 10px;
-    grid-row-gap: 100px;
+    grid-row-gap: 10px;
+    align-items: center;
+    justify-items: center;
 }
 
-#player1 { 
+#player1 {
     grid-area: 9 / 4 / 10 / 5;
+    background-repeat: no-repeat;
+    background-image: url(../img/placeholder-card-normal.webp);
+    background-size: contain;
+    background-position: center;
+    width: 60px;
+    height: 80px;
 }
 
 #player2 {
-    grid-area: 7 / 5 / 8 / 6; 
+    grid-area: 7 / 5 / 8 / 6;
+    background-repeat: no-repeat;
+    background-image: url(../img/placeholder-card-normal.webp);
+    background-size: contain;
+    background-position: center;
+    width: 60px;
+    height: 80px;
 }
 
 #player3 {
     grid-area: 7 / 7 / 8 / 8;
+    background-repeat: no-repeat;
+    background-image: url(../img/placeholder-card-normal.webp);
+    background-size: contain;
+    background-position: center;
+    width: 60px;
+    height: 80px;
 }
 
 #player4 {
-    grid-area: 7 / 3 / 8 / 4; 
+    grid-area: 7 / 3 / 8 / 4;
+    background-repeat: no-repeat;
+    background-image: url(../img/placeholder-card-normal.webp);
+    background-size: contain;
+    background-position: center;
+    width: 60px;
+    height: 80px;
 }
 
-#player5 { 
-    grid-area: 7 / 1 / 8 / 2; 
+#player5 {
+    grid-area: 7 / 1 / 8 / 2;
+    background-repeat: no-repeat;
+    background-image: url(../img/placeholder-card-normal.webp);
+    background-size: contain;
+    background-position: center;
+    width: 60px;
+    height: 80px;
 }
 
-#player6 { 
-    grid-area: 4 / 1 / 6 / 2; 
+#player6 {
+    grid-area: 4 / 1 / 6 / 2;
+    background-repeat: no-repeat;
+    background-image: url(../img/placeholder-card-normal.webp);
+    background-size: contain;
+    background-position: center;
+    width: 60px;
+    height: 80px;
 }
 
-#player7 { 
-    grid-area: 4 / 3 / 6 / 4; 
+#player7 {
+    grid-area: 4 / 3 / 6 / 4;
+    background-repeat: no-repeat;
+    background-image: url(../img/placeholder-card-normal.webp);
+    background-size: contain;
+    background-position: center;
+    width: 60px;
+    height: 80px;
 }
 
 #player8 {
-    grid-area: 4 / 5 / 6 / 6; 
+    grid-area: 4 / 5 / 6 / 6;
+    background-repeat: no-repeat;
+    background-image: url(../img/placeholder-card-normal.webp);
+    background-size: contain;
+    background-position: center;
+    width: 60px;
+    height: 80px;
 }
 
 #player9 {
     grid-area: 4 / 7 / 6 / 8;
+    background-repeat: no-repeat;
+    background-image: url(../img/placeholder-card-normal.webp);
+    background-size: contain;
+    background-position: center;
+    width: 60px;
+    height: 80px;
 }
 
 #player10 {
-    grid-area: 2 / 3 / 4 / 4; 
+    grid-area: 2 / 3 / 4 / 4;
+    background-repeat: no-repeat;
+    background-image: url(../img/placeholder-card-normal.webp);
+    background-size: contain;
+    background-position: center;
+    width: 60px;
+    height: 80px;
 }
 
-#player11 { 
-    grid-area: 2 / 5 / 4 / 6; 
+#player11 {
+    grid-area: 2 / 5 / 4 / 6;
+    background-repeat: no-repeat;
+    background-image: url(../img/placeholder-card-normal.webp);
+    background-size: contain;
+    background-position: center;
+    width: 60px;
+    height: 80px;
 }
 
-#aside{
-    background: rgba(7, 101, 21, 0.642);
+#player1 img {
+    width: 60px;
+    height: 80px;
+
+}
+
+#aside {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
+    position: relative;
 }
-/* #player12 { 
-    grid-area: 9 / 4 / 10 / 5;
+
+#content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    position: absolute;
+}
+
+#player12 {
+    background-repeat: no-repeat;
+    background-image: url(../img/placeholder-card-normal.webp);
+    background-size: contain;
+    background-position: center;
+    width: 60px;
+    height: 80px;
 }
 
 #player13 {
-    grid-area: 7 / 5 / 8 / 6; 
+    background-repeat: no-repeat;
+    background-image: url(../img/placeholder-card-normal.webp);
+    background-size: contain;
+    background-position: center;
+    width: 60px;
+    height: 80px;
 }
 
 #player14 {
-    grid-area: 7 / 7 / 8 / 8;
+    background-repeat: no-repeat;
+    background-image: url(../img/placeholder-card-normal.webp);
+    background-size: contain;
+    background-position: center;
+    width: 60px;
+    height: 80px;
 }
 
 #player15 {
-    grid-area: 7 / 3 / 8 / 4; 
+    background-repeat: no-repeat;
+    background-image: url(../img/placeholder-card-normal.webp);
+    background-size: contain;
+    background-position: center;
+    width: 60px;
+    height: 80px;
 }
 
-#player16 { 
-    grid-area: 7 / 1 / 8 / 2; 
+#player16 {
+    background-repeat: no-repeat;
+    background-image: url(../img/placeholder-card-normal.webp);
+    background-size: contain;
+    background-position: center;
+    width: 60px;
+    height: 80px;
 }
 
-#player17 { 
-    grid-area: 4 / 1 / 6 / 2; 
+#player17 {
+    background-repeat: no-repeat;
+    background-image: url(../img/placeholder-card-normal.webp);
+    background-size: contain;
+    background-position: center;
+    width: 60px;
+    height: 80px;
 }
 
-#player18 { 
-    grid-area: 4 / 3 / 6 / 4; 
+#player18 {
+    background-repeat: no-repeat;
+    background-image: url(../img/placeholder-card-normal.webp);
+    background-size: contain;
+    background-position: center;
+    width: 60px;
+    height: 80px;
 }
 
 #player19 {
-    grid-area: 4 / 5 / 6 / 6; 
+    background-repeat: no-repeat;
+    background-image: url(../img/placeholder-card-normal.webp);
+    background-size: contain;
+    background-position: center;
+    width: 60px;
+    height: 80px;
 }
 
 #player20 {
-    grid-area: 4 / 7 / 6 / 8;
+    background-repeat: no-repeat;
+    background-image: url(../img/placeholder-card-normal.webp);
+    background-size: contain;
+    background-position: center;
+    width: 60px;
+    height: 80px;
 }
 
 #player21 {
-    grid-area: 2 / 3 / 4 / 4; 
+    background-repeat: no-repeat;
+    background-image: url(../img/placeholder-card-normal.webp);
+    background-size: contain;
+    background-position: center;
+    width: 60px;
+    height: 80px;
 }
 
-#player22 { 
-    grid-area: 2 / 5 / 4 / 6; 
-} */
-#footer{
+#player22 {
+    background-repeat: no-repeat;
+    background-image: url(../img/placeholder-card-normal.webp);
+    background-size: contain;
+    background-position: center;
+    width: 60px;
+    height: 80px;
+}
+
+#player23 {
+    background-repeat: no-repeat;
+    background-image: url(../img/placeholder-card-normal.webp);
+    background-size: contain;
+    background-position: center;
+    width: 60px;
+    height: 80px;
+}
+
+#player24 {
+    background-repeat: no-repeat;
+    background-image: url(../img/placeholder-card-normal.webp);
+    background-size: contain;
+    background-position: center;
+    width: 60px;
+    height: 80px;
+}
+
+#player25 {
+    background-repeat: no-repeat;
+    background-image: url(../img/placeholder-card-normal.webp);
+    background-size: contain;
+    background-position: center;
+    width: 60px;
+    height: 80px;
+}
+
+#player26 {
+    background-repeat: no-repeat;
+    background-image: url(../img/placeholder-card-normal.webp);
+    background-size: contain;
+    background-position: center;
+    width: 60px;
+    height: 80px;
+}
+
+#footer {
     background: blue;
     height: 80px;
     font-size: 24px;
 }
-@media all and (min-width: 800px){
-    #main{
-        flex:3;
+
+@media all and (min-width: 800px) {
+    #main {
+        flex: 3;
     }
 
-    #aside{
+    #aside {
         order: 1;
     }
 
-    #main{
+    #main {
         order: 2;
     }
-    
-    #footer{
+
+    #footer {
         order: 4;
     }
 }
 
-@media all and (min-width: 600px){
-    #aside{
-        flex:1 ;
+@media all and (min-width: 600px) {
+    #aside {
+        flex: 1;
     }
 
+}
+
+.player-card {
+    /* border: 1px solid #ccc; */
+    /* border-radius: 50px 1px; */
+    padding: 5px;
+    margin: -2px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-image: url(../img/placeholder-card-normal.webp);
+    background-size: contain;
+    background-position: center;
+    width: 70px;
+    height: auto;
+    cursor: move;
+    box-shadow: 0 0 50px rgb(13, 255, 0),
+    ;
+  
+}
+
+.player-card:hover {
+    filter: drop-shadow(0 -2px 5px #06fc02) drop-shadow(0 8px 8px #06fc02);
+}
+
+.player-photo {
+    width: 35px;
+    height: auto;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0;
+}
+
+.club-logo {
+    width: 10px;
+    height: auto;
+    margin-left: 5px;
+}
+.modal-backdrop {
+    display: none ;
+}
+
+
+.player-card p {
+    font-size: 7px;
+    padding: 2px;
+    margin: 1px;
+    color: rgb(17, 255, 0);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }

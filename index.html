@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./ass/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
     <title>Document</title>
 </head>
 
@@ -13,106 +17,184 @@
         <header id="header">
             <div id="team-info">
                 <div id="team-name">
-                    <h2>coders</h2>
+                    <marquee direction="" style="color: white; background-color: green;">The full transcript from
+                        Chelsea head coach Enzo Maresca at the Voith-Arena as the Italian previewed tomorrow evening's
+                        UEFA Conference League match against FC Heidenheim </marquee>
                 </div>
                 <div id="team-logo">
-                    <img src="./ass/img/telechargement.webp" alt="img">
+                    <img src="./ass/img/logo.png" alt="img">
                 </div>
             </div>
         </header>
         <main id="main">
             <div id="team-tactic">
-                <!-- <div class="tiran">
-                     <img src="./ass/img/tiran.webp" alt="tiran"
-                </div> -->
+
                 <div id="players">
-                    <div id="player1">
-                        <img src="./ass/img/placeholder-card-normal.webp" alt="player1">
-                    </div>
-                    <div id="player2">
-                        <img src="./ass/img/placeholder-card-normal.webp" alt="player2">
-                    </div>
-                    <div id="player3">
-                        <img src="./ass/img/placeholder-card-normal.webp" alt="player3">
-                    </div>
-                    <div id="player4">
-                        <img src="./ass/img/placeholder-card-normal.webp" alt="player4">
-                    </div>
-                    <div id="player5">
-                        <img src="./ass/img/placeholder-card-normal.webp" alt="player5">
-                    </div>
-                    <div id="player6">
-                        <img src="./ass/img/placeholder-card-normal.webp" alt="player6">
-                    </div>
-                    <div id="player7">
-                        <img src="./ass/img/placeholder-card-normal.webp" alt="player7">
-                    </div>
-                    <div id="player8">
-                        <img src="./ass/img/placeholder-card-normal.webp" alt="player8">
-                    </div>
-                    <div id="player9">
-                        <img src="./ass/img/placeholder-card-normal.webp" alt="player9">
-                    </div>
-                    <div id="player10">
-                        <img src="./ass/img/placeholder-card-normal.webp" alt="player10">
-                    </div>
-                    <div id="player11">
-                        <img src="./ass/img/placeholder-card-normal.webp" alt="player11">
-                    </div>
+                    <div id="player1" data-role="GK"><P style="color: aliceblue;">GK</P></div>
+                    <div id="player2" data-role="CB"><P style="color: aliceblue;">CB</P></div>
+                    <div id="player3" data-role="CB"><P style="color: aliceblue;">CB</P></div>
+                    <div id="player4" data-role="LB"><P style="color: aliceblue;">LB</P></div>
+                    <div id="player5" data-role="RB"><P style="color: aliceblue;">RB</P></div>
+                    <div id="player6" data-role="CDM"><P style="color: aliceblue;">CDM</P></div>
+                    <div id="player7" data-role="CDM"><P style="color: aliceblue;">CDM</P></div>
+                    <div id="player8" data-role="CM"><P style="color: aliceblue;">CM</P></div>
+                    <div id="player9" data-role="CM"><P style="color: aliceblue;">CM</P></div>
+                    <div id="player10" data-role="ST"><P style="color: aliceblue;">ST</P></div>
+                    <div id="player11" data-role="ST"><P style="color: aliceblue;">ST</P></div>
+                    <!-- <div id="player12" data-role="ST"></div>
+                    <div id="player13" data-role="LW"></div>
+                    <div id="player14" data-role="RW"></div>
+                    <div id="player15" data-role="LWB"></div>
+                    <div id="player16" data-role="RWB"></div>
+                    <div id="player17" data-role="LM"></div>
+                    <div id="player18" data-role="RM"></div>
+                    <div id="player19" data-role="CB"></div>
+                    <div id="player20" data-role="CB"></div>
+                    <div id="player21" data-role="CDM"></div>
+                    <div id="player22" data-role="CAM"></div>
+                    <div id="player23" data-role="ST"></div>
+                    <div id="player24" data-role="LW"></div>
+                    <div id="player25" data-role="RW"></div>
+                    <div id="player26" data-role="GK"></div> -->
+                    
 
                 </div>
             </div>
         </main>
+
         <aside id="aside">
-            
-                <div id="player12">
-                    <img src="./ass/img/placeholder-card-normal.webp" alt="player1">
+            <div class="player-card" id="addbutton">
+                <div class="player-photo">
+
                 </div>
-                <div id="player13">
-                    <img src="./ass/img/placeholder-card-normal.webp" alt="player2">
+
+                <div class="player-info">
+                    <p class="player-name"></p>
+                    <p class="player-position"></p>
+                    <p class="player-rating"></p>
+                    <div class="player-club">
+                        <span></span>
+                    </div>
                 </div>
-                <div id="player14">
-                    <img src="./ass/img/placeholder-card-normal.webp" alt="player3">
-                </div>
-                <div id="player15">
-                    <img src="./ass/img/placeholder-card-normal.webp" alt="player4">
-                </div>
-                <div id="player16">
-                    <img src="./ass/img/placeholder-card-normal.webp" alt="player5">
-                </div>
-                <div id="player17">
-                    <img src="./ass/img/placeholder-card-normal.webp" alt="player6">
-                </div>
-                <div id="player18">
-                    <img src="./ass/img/placeholder-card-normal.webp" alt="player7">
-                </div>
-                <div id="player19">
-                    <img src="./ass/img/placeholder-card-normal.webp" alt="player8">
-                </div>
-                <div id="player20">
-                    <img src="./ass/img/placeholder-card-normal.webp" alt="player9">
-                </div>
-                <div id="player21">
-                    <img src="./ass/img/placeholder-card-normal.webp" alt="player10">
-                </div>
-                <div id="player22">
-                    <img src="./ass/img/placeholder-card-normal.webp" alt="player11">
-                </div>
-                <div id="player23">
-                    <img src="./ass/img/placeholder-card-normal.webp" alt="player11">
-                </div>
-                <div id="player24">
-                    <img src="./ass/img/placeholder-card-normal.webp" alt="player11">
-                </div>
-                <div id="player25">
-                    <img src="./ass/img/placeholder-card-normal.webp" alt="player11">
-                </div>
-                <div id="player26">
-                    <img src="./ass/img/placeholder-card-normal.webp" alt="player11">
-                </div>
+            </div>
         </aside>
-        <footer id="footer"></footer>
+        <aside id="aside2">
+            <div id="ajoute">
+                <div id="ajoute-button">
+                    <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Add Player
+                    </button>
+                    
+                </div>
+                <div id="ajoute-player">
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">New PLayer</h5>
+                                    <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button> -->
+                                    <button type="button" id="buttonClose" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form id="playerForm">
+                                        <div class="mb-3">
+                                            <label for="position">position:</label>
+                                            <select id="position" class="form-select" required>
+                                                <option value="RW">RW</option>
+                                                <option value="ST">ST</option>
+                                                <option value="CM">CM</option>
+                                                <option value="LW">LW</option>
+                                                <option value="GK">GK</option>
+                                                <option value="CDM">CDM</option>
+                                                <option value="CB">CB</option>
+                                                <option value="LB">LB</option>
+                                                <option value="RB">RB</option>
+                                            </select>
+                                        </div>
+                                        <!-- end model -->
+                                        <div class="mb-3">
+                                            <label for="photo" class="form-label">photo:</label>
+                                            <input type="file" id="photo" class="form-control" accept="image/*" />
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="Name" class="form-label">Name:</label>
+                                            <input type="text" id="Name" class="form-control" required />
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="nationality" class="form-label">nationality:</label>
+                                            <input type="text" id="nationality" class="form-control" required />
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="flag" class="form-label">flag:</label>
+                                            <input type="text" id="flag" class="form-control" required />
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="club" class="form-label">club:</label>
+                                            <input type="text" id="club" class="form-control" required />
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="logo" class="form-label">logo:</label>
+                                            <input type="text" id="logo" class="form-control" required />
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="rating" class="form-label">rating:</label>
+                                            <input type="text" id="rating" class="form-control" required />
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="pace" class="form-label">pace:</label>
+                                            <input type="pace" id="pace" class="form-control" required />
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="shooting" class="form-label">shooting:</label>
+                                            <input type="text" id="shooting" class="form-control" required />
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="passing" class="form-label">passing:</label>
+                                            <input type="text" id="passing" class="form-control" required />
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="dribbling" class="form-label">dribbling:</label>
+                                            <input type="text" id="dribbling" class="form-control" required />
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="defending" class="form-label">defending:</label>
+                                            <input type="text" id="defending" class="form-control" required />
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="physical" class="form-label">physical:</label>
+                                            <input type="text" id="physical" class="form-control" required />
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                        Close
+                                    </button>
+                                    <button type="button" onclick="addPlayer()" class="btn btn-primary">
+                                        Add player
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </aside>
+        <footer id="footer">
+
+        </footer>
     </div>
+
+    <script src="./ass/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>
