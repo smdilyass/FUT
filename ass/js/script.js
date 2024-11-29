@@ -24,7 +24,7 @@ fetch("ass/json/data.json")
 
 const addbutton = document.getElementById("ajoute-button")
 addbutton.addEventListener("click", function () {
-    const blockform = document.getElementById("popup");
+    const blockform = document.getElementById("ajoute-player");
     blockform.style = "display:block;"
 });
 
