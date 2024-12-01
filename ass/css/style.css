@@ -2,33 +2,49 @@
     display: flex;
     flex-flow: row wrap;
     text-align: center;
-    background:rgb(0, 0, 0);
+    background:url(https://images6.alphacoders.com/131/1319754.jpeg);
     background-position: center;
-    background-size: cover;
+    background-size:cover;
+    background-repeat: no-repeat;
 }
 
 #body>* {
-    padding: 10px;
-    margin: 10px;
+    /* padding: 10px;
+    margin: 10px; */
     flex: 1 100%;
 
+}
+#aside2{
+
+}
+#team-logo{
+    margin: 0;
+    padding: 0;
+    height: 7%;
+    width: inherit;
+ 
 }
 
 
 #team-logo img {
-    position: absolute;
-    left: 0;
+    position: relative;
+    right: 354px;
     top: 0;
-    width: 60px;
+    height: 50px;
+   
     margin: 0px;
-    background: green;
+    background-color: rgb(16, 46, 199);
+
 }
 
 #team-name marquee {
     position: absolute;
-    left: 60px;
+    left: 0px;
     top: 0px;
-    font-size: x-large;
+    height: 50px;
+}
+#team-name marquee img{
+    height: 50px;
 }
 
 #team-tactic {
@@ -39,6 +55,9 @@
     background-position: center;
     height: 855px;
     width: 620px;
+    margin: 10px;
+    padding: 10px;
+    border: #02cefc solid;
 }
 
 #players {
@@ -49,9 +68,12 @@
     grid-row-gap: 10px;
     align-items: center;
     justify-items: center;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
 }
 
-#player1 {
+
+#GK {
     grid-area: 9 / 4 / 10 / 5;
     background-repeat: no-repeat;
     background-image: url(../img/placeholder-card-normal.webp);
@@ -59,9 +81,15 @@
     background-position: center;
     width: 60px;
     height: 80px;
+    transition: .5s;
+    filter: brightness(0);
+}
+#GK:hover{
+    filter: brightness(1);
+    transform: translateZ(100px);
 }
 
-#player2 {
+#CB1 {
     grid-area: 7 / 5 / 8 / 6;
     background-repeat: no-repeat;
     background-image: url(../img/placeholder-card-normal.webp);
@@ -71,7 +99,7 @@
     height: 80px;
 }
 
-#player3 {
+#CB2 {
     grid-area: 7 / 7 / 8 / 8;
     background-repeat: no-repeat;
     background-image: url(../img/placeholder-card-normal.webp);
@@ -81,7 +109,7 @@
     height: 80px;
 }
 
-#player4 {
+#LB{
     grid-area: 7 / 3 / 8 / 4;
     background-repeat: no-repeat;
     background-image: url(../img/placeholder-card-normal.webp);
@@ -91,7 +119,7 @@
     height: 80px;
 }
 
-#player5 {
+#RB {
     grid-area: 7 / 1 / 8 / 2;
     background-repeat: no-repeat;
     background-image: url(../img/placeholder-card-normal.webp);
@@ -101,7 +129,7 @@
     height: 80px;
 }
 
-#player6 {
+#CDM1 {
     grid-area: 4 / 1 / 6 / 2;
     background-repeat: no-repeat;
     background-image: url(../img/placeholder-card-normal.webp);
@@ -111,7 +139,7 @@
     height: 80px;
 }
 
-#player7 {
+#CDM2{
     grid-area: 4 / 3 / 6 / 4;
     background-repeat: no-repeat;
     background-image: url(../img/placeholder-card-normal.webp);
@@ -121,7 +149,7 @@
     height: 80px;
 }
 
-#player8 {
+#CM1 {
     grid-area: 4 / 5 / 6 / 6;
     background-repeat: no-repeat;
     background-image: url(../img/placeholder-card-normal.webp);
@@ -131,7 +159,7 @@
     height: 80px;
 }
 
-#player9 {
+#CM2 {
     grid-area: 4 / 7 / 6 / 8;
     background-repeat: no-repeat;
     background-image: url(../img/placeholder-card-normal.webp);
@@ -141,7 +169,7 @@
     height: 80px;
 }
 
-#player10 {
+#ST1 {
     grid-area: 2 / 3 / 4 / 4;
     background-repeat: no-repeat;
     background-image: url(../img/placeholder-card-normal.webp);
@@ -151,7 +179,7 @@
     height: 80px;
 }
 
-#player11 {
+#ST2 {
     grid-area: 2 / 5 / 4 / 6;
     background-repeat: no-repeat;
     background-image: url(../img/placeholder-card-normal.webp);
@@ -161,11 +189,8 @@
     height: 80px;
 }
 
-#player1 img {
-    width: 60px;
-    height: 80px;
 
-}
+
 
 #aside {
     display: grid;
@@ -174,6 +199,11 @@
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     position: relative;
+    background-image: url(../img/teamblue\ look.jpg);
+    margin: 10px;
+    border: #02cefc solid;
+    
+
 }
 
 #content {
@@ -181,142 +211,10 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     position: absolute;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
 }
 
-#player12 {
-    background-repeat: no-repeat;
-    background-image: url(../img/placeholder-card-normal.webp);
-    background-size: contain;
-    background-position: center;
-    width: 60px;
-    height: 80px;
-}
-
-#player13 {
-    background-repeat: no-repeat;
-    background-image: url(../img/placeholder-card-normal.webp);
-    background-size: contain;
-    background-position: center;
-    width: 60px;
-    height: 80px;
-}
-
-#player14 {
-    background-repeat: no-repeat;
-    background-image: url(../img/placeholder-card-normal.webp);
-    background-size: contain;
-    background-position: center;
-    width: 60px;
-    height: 80px;
-}
-
-#player15 {
-    background-repeat: no-repeat;
-    background-image: url(../img/placeholder-card-normal.webp);
-    background-size: contain;
-    background-position: center;
-    width: 60px;
-    height: 80px;
-}
-
-#player16 {
-    background-repeat: no-repeat;
-    background-image: url(../img/placeholder-card-normal.webp);
-    background-size: contain;
-    background-position: center;
-    width: 60px;
-    height: 80px;
-}
-
-#player17 {
-    background-repeat: no-repeat;
-    background-image: url(../img/placeholder-card-normal.webp);
-    background-size: contain;
-    background-position: center;
-    width: 60px;
-    height: 80px;
-}
-
-#player18 {
-    background-repeat: no-repeat;
-    background-image: url(../img/placeholder-card-normal.webp);
-    background-size: contain;
-    background-position: center;
-    width: 60px;
-    height: 80px;
-}
-
-#player19 {
-    background-repeat: no-repeat;
-    background-image: url(../img/placeholder-card-normal.webp);
-    background-size: contain;
-    background-position: center;
-    width: 60px;
-    height: 80px;
-}
-
-#player20 {
-    background-repeat: no-repeat;
-    background-image: url(../img/placeholder-card-normal.webp);
-    background-size: contain;
-    background-position: center;
-    width: 60px;
-    height: 80px;
-}
-
-#player21 {
-    background-repeat: no-repeat;
-    background-image: url(../img/placeholder-card-normal.webp);
-    background-size: contain;
-    background-position: center;
-    width: 60px;
-    height: 80px;
-}
-
-#player22 {
-    background-repeat: no-repeat;
-    background-image: url(../img/placeholder-card-normal.webp);
-    background-size: contain;
-    background-position: center;
-    width: 60px;
-    height: 80px;
-}
-
-#player23 {
-    background-repeat: no-repeat;
-    background-image: url(../img/placeholder-card-normal.webp);
-    background-size: contain;
-    background-position: center;
-    width: 60px;
-    height: 80px;
-}
-
-#player24 {
-    background-repeat: no-repeat;
-    background-image: url(../img/placeholder-card-normal.webp);
-    background-size: contain;
-    background-position: center;
-    width: 60px;
-    height: 80px;
-}
-
-#player25 {
-    background-repeat: no-repeat;
-    background-image: url(../img/placeholder-card-normal.webp);
-    background-size: contain;
-    background-position: center;
-    width: 60px;
-    height: 80px;
-}
-
-#player26 {
-    background-repeat: no-repeat;
-    background-image: url(../img/placeholder-card-normal.webp);
-    background-size: contain;
-    background-position: center;
-    width: 60px;
-    height: 80px;
-}
 
 #footer {
     background: rgb(58, 58, 61);
@@ -330,11 +228,11 @@
     }
 
     #aside {
-        order: 1;
+        order: 2;
     }
 
     #main {
-        order: 2;
+        order: 1;
     }
 
     #footer {
@@ -359,16 +257,19 @@
     background-image: url(../img/placeholder-card-normal.webp);
     background-size: contain;
     background-position: center;
-    width: 70px;
+    width: auto;
     height: auto;
     cursor: move;
-    box-shadow: 0 0 50px rgb(13, 255, 0),
-    ;
+    box-shadow: 0 0 50px rgb(45, 202, 237) ;
+    transition: .5s;   
   
 }
 
 .player-card:hover {
     filter: drop-shadow(0 -2px 5px #06fc02) drop-shadow(0 8px 8px #06fc02);
+    transform: rotateZ(200px);
+    filter: brightness(1);
+
 }
 
 .player-photo {

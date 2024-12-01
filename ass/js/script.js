@@ -1,5 +1,4 @@
 const btnCloseModal = document.getElementById('buttonClose');
-
 fetch("ass/json/data.json")
     .then(response => response.json())
     .then(obj => {
@@ -28,10 +27,6 @@ addbutton.addEventListener("click", function () {
 });
 
 function addPlayer() {
-    // const closMod = document.getElementById('exampleModal');
-    // closMod.classList.remove('modal fade show');
-    // closMod.classList.add('modal fade');
-    // const playerContainer = document.getElementById("player-container");
     const name = document.getElementById('Name').value;
     const position = document.getElementById('position').value;
     const photo = document.getElementById('photo').files[0]
@@ -41,7 +36,6 @@ function addPlayer() {
     const logo = document.getElementById('logo').value;
     const rating = document.getElementById('rating').value;
     const playerDiv = document.getElementById('aside');
-    // playerDiv.className = 'player-card';
     playerDiv.innerHTML += `
         <div class="player-card">
         <div class="player-photo">
@@ -56,9 +50,6 @@ function addPlayer() {
         </div>
     `;
 
-
-    // const playerContainer = document.getElementById('players');
-    // playerContainer.appendChild(playerDiv);
     document.getElementById('playerForm').reset();
     const modal = bootstrap.Modal.getInstance(document.getElementById('exampleModal'));
     modal.hide();
@@ -91,9 +82,9 @@ document.addEventListener('DOMContentLoaded', () => {
         position.addEventListener('drop', (e) => {
             e.preventDefault();
             const draggedHTML = e.dataTransfer.getData('text/plain');
-            const draggedPosition = e.dataTransfer.getData('position');
+            const draggedPosition = e.dataTransfer.getData('position').toUpperCase();
             const positionId = position.id.replace('player', '').toUpperCase();
-            if (draggedPosition === positionId) {
+            if (draggedPosition == positionId) {
                 position.innerHTML = draggedHTML;
                 position.querySelector('.player-card').setAttribute('draggable', 'false'); // Disable further dragging
             } else {
