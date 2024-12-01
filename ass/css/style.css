@@ -17,28 +17,10 @@
 #aside2{
 
 }
-#team-logo{
-    margin: 0;
-    padding: 0;
-    height: 7%;
-    width: inherit;
- 
-}
 
 
-#team-logo img {
-    position: relative;
-    right: 354px;
-    top: 0;
-    height: 50px;
-   
-    margin: 0px;
-    background-color: rgb(16, 46, 199);
-
-}
 
 #team-name marquee {
-    position: absolute;
     left: 0px;
     top: 0px;
     height: 50px;
@@ -97,6 +79,12 @@
     background-position: center;
     width: 60px;
     height: 80px;
+    transition: .5s;
+    filter: brightness(0);
+}
+#CB1:hover{
+    filter: brightness(1);
+    transform: translateZ(100px);
 }
 
 #CB2 {
@@ -202,8 +190,6 @@
     background-image: url(../img/teamblue\ look.jpg);
     margin: 10px;
     border: #02cefc solid;
-    
-
 }
 
 #content {
@@ -211,8 +197,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     position: absolute;
-    transform-style: preserve-3d;
-    transform: perspective(1000px);
+
 }
 
 
