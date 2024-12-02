@@ -74,6 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    
     positions.forEach(position => {
         position.addEventListener('dragover', (e) => {
             e.preventDefault();

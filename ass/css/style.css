@@ -261,8 +261,6 @@
 }
 
 .player-card {
-    /* border: 1px solid #ccc; */
-    /* border-radius: 50px 1px; */
     padding: 5px;
     margin: -2px;
     text-align: center;
@@ -273,16 +271,14 @@
     width: auto;
     height: auto;
     cursor: move;
-    box-shadow: 0 0 50px rgb(45, 202, 237) ;
     transition: .5s;   
-  
+    filter: drop-shadow(0 -2px 5px #06fc02);
+    filter: brightness(.5);
 }
-
 .player-card:hover {
-    filter: drop-shadow(0 -2px 5px #06fc02) drop-shadow(0 8px 8px #06fc02);
     transform: rotateZ(200px);
     filter: brightness(1);
-
+    filter: drop-shadow(0 -2px 5px #06fc02),(0 -2px 5px #06fc02);
 }
 
 .player-photo {
@@ -301,8 +297,6 @@
 .modal-backdrop {
     display: none ;
 }
-
-
 .player-card p {
     font-size: 7px;
     padding: 2px;
