@@ -63,7 +63,7 @@
     background-position: center;
     width: 60px;
     height: 80px;
-    transition: .5s;
+    transition: .2s;
     filter: brightness(0);
 }
 #GK:hover{
@@ -79,7 +79,7 @@
     background-position: center;
     width: 60px;
     height: 80px;
-    transition: .5s;
+    transition: .2s;
     filter: brightness(0);
 }
 #CB1:hover{
@@ -95,8 +95,13 @@
     background-position: center;
     width: 60px;
     height: 80px;
+    transition: .2s;
+    filter: brightness(0);
 }
-
+#CB2:hover{
+    filter: brightness(1);
+    transform: translateZ(100px);
+}
 #LB{
     grid-area: 7 / 3 / 8 / 4;
     background-repeat: no-repeat;
@@ -105,8 +110,13 @@
     background-position: center;
     width: 60px;
     height: 80px;
+    transition: .2s;
+    filter: brightness(0);
 }
-
+#LB:hover{
+    filter: brightness(1);
+    transform: translateZ(100px);
+}
 #RB {
     grid-area: 7 / 1 / 8 / 2;
     background-repeat: no-repeat;
@@ -115,6 +125,12 @@
     background-position: center;
     width: 60px;
     height: 80px;
+    transition: .2s;
+    filter: brightness(0);
+}
+#RB:hover{
+    filter: brightness(1);
+    transform: translateZ(100px);
 }
 
 #CDM1 {
@@ -125,6 +141,12 @@
     background-position: center;
     width: 60px;
     height: 80px;
+    transition: .2s;
+    filter: brightness(0);
+}
+#CDM1:hover{
+    filter: brightness(1);
+    transform: translateZ(100px);
 }
 
 #CDM2{
@@ -135,6 +157,12 @@
     background-position: center;
     width: 60px;
     height: 80px;
+    transition: .2s;
+    filter: brightness(0);
+}
+#CDM2:hover{
+    filter: brightness(1);
+    transform: translateZ(100px);
 }
 
 #CM1 {
