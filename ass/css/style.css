@@ -272,18 +272,16 @@
     height: auto;
     cursor: move;
     transition: .5s;   
-    filter: drop-shadow(0 -2px 5px #06fc02);
-    filter: brightness(.5);
+    position: relative;
 }
 .player-card:hover {
     transform: rotateZ(200px);
-    filter: brightness(1);
     filter: drop-shadow(0 -2px 5px #06fc02),(0 -2px 5px #06fc02);
 }
 
 .player-photo {
     width: 35px;
-    height: auto;
+    height: 35px;
     border-radius: 50%;
     padding: 0;
     margin: 0;
@@ -291,9 +289,14 @@
 
 .club-logo {
     width: 10px;
-    height: auto;
-    margin-left: 5px;
+    height: 10px;
+    margin-left: 1px;
 }
+.club-logo img {
+    width: 10px;
+    height: 10px;
+}
+
 .modal-backdrop {
     display: none ;
 }

@@ -31,9 +31,11 @@ function addPlayer() {
     const position = document.getElementById('position').value;
     const photo = document.getElementById('photo').files[0]
         ? URL.createObjectURL(document.getElementById('photo').files[0])
-        : './ass/img/placeholder-card-normal.webp';
+        : 'https://cdn.sofifa.net/players/236/401/25_120.png';
     const club = document.getElementById('club').value;
-    const logo = document.getElementById('logo').value;
+    const logo = document.getElementById('logo').files[0]
+        ? URL.createObjectURL(document.getElementById('logo').files[0])
+        : 'https://cdn.sofifa.net/flags/ma.png';
     const rating = document.getElementById('rating').value;
     const playerDiv = document.getElementById('aside');
     playerDiv.innerHTML += `
