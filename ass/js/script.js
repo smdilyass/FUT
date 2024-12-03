@@ -101,9 +101,9 @@ document.querySelector('button[data-bs-toggle="modal"]').addEventListener('click
 
 function validateForm() {
     let isValid = true;
-    const positionPlayer = document.getElementById('position').value.trim();
-    const photoPlayer = document.getElementById('photo').value.trim();
     const namePlayer = document.getElementById('Name').value.trim();
+    const photoPlayer = document.getElementById('photo').value.trim();
+    const positionPlayer = document.getElementById('position').value.trim();
     const clubPlayer = document.getElementById('club').value.trim();
     const logoPlayer = document.getElementById('logo').value.trim();
     const ratingPlayer = document.getElementById('rating').value.trim();

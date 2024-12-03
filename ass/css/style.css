@@ -17,6 +17,7 @@
     top: 0px;
     height: 50px;
 }
+
 #team-name marquee img{
     height: 50px;
 }
@@ -265,7 +266,6 @@
    background-size:contain ;
    background-repeat: no-repeat;
    border-radius: 12px;
-    border: solid #02cefc;
 }
 
 .player-card {
@@ -319,7 +319,10 @@
 #message{
     height: auto;
     width: auto;
+    text-align: end;
+    margin: 10px;
+    padding: 10px;
     color: rgb(4, 4, 6) !important ;
-    background: red;
+    background: rgb(255, 136, 0);
     border-radius: 12px;
 }
