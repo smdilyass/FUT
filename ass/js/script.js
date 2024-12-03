@@ -19,6 +19,26 @@ fetch("ass/json/data.json")
     })
 
     .catch(error => console.error("Error fetching the data:", error));
+    
+    fetch("ass/json/data.json")
+    .then(response => response.json())
+    .then(obj => {
+        const players = obj.players;
+        const playerContainer = document.getElementById('here');
+        players.forEach(player => {
+            const playerDiv = document.createElement('div');
+            playerDiv.className = 'player-card';
+            playerDiv.innerHTML = `
+                        <img src="${player.photo}" alt="${player.name}" class="player-photo">
+                        <p>${player.name}</p>
+                        <p>Position: ${player.position}</p>
+                        <p>Rating: ${player.rating}</p>
+                        <p>Club: <img src="${player.logo}" alt="" class="club-logo"> </p>
+                    `;
+            playerContainer.appendChild(playerDiv);
+        });
+    })
+
 
 const addbutton = document.getElementById("ajoute-button")
 addbutton.addEventListener("click", function () {
@@ -41,7 +61,7 @@ function addPlayer() {
     playerDiv.innerHTML += `
         <div class="player-card">
         <div class="player-photo">
-            <img src="${photo}" alt="${name}" style="width: 100%; height: auto;">
+            <img src="${photo}" alt="${name}" style="width: 100%; height: auto; ">
         </div>
         <p>${name}</p>
         <p>Position: ${position}</p>

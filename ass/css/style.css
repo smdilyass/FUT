@@ -237,15 +237,20 @@
 
 @media all and (min-width: 800px) {
     #main {
-        flex: 3;
+        flex: 1;
     }
 
     #aside {
-        order: 2;
+        order: 3;
     }
+    
 
     #main {
         order: 1;
+    }
+    #aside2{
+        order: 2;
+        flex:0.5;
     }
 
     #footer {
@@ -257,7 +262,18 @@
     #aside {
         flex: 1;
     }
+    #aside2{
+        flex:0.5
+    }
+   
 
+}
+#aside2{
+   display: flex;
+   border-radius: 5%;
+   background: url(/ass/img/Blue\ Lock\ Collection.jpg);
+   background-size:contain ;
+   background-repeat: no-repeat;
 }
 
 .player-card {
